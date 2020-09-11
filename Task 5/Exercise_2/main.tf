@@ -6,16 +6,6 @@ terraform {
   }
 }
 
-provider "aws" {
-  profile = "default"
-  region  = "us-east-1"
-}
-
-
-
-variable "aws_region" {
-  default = "us-west-2"
-}
 
 provider "aws" {
   region          = "${var.aws_region}"
@@ -26,15 +16,9 @@ data "archive_file" "lambda_zip" {
     source_file   = "greet_lambda.py"
     output_path   = "lambda_function.zip"
 }
-
-resource "aws_lambda_function" "greet_lambda" {
-  filename         = "lambda_function.zip"
-  function_name    = "greet_lambda"
-  role             = "${aws_iam_role.for_lambda.arn}"
-  handler          = "greet_lambda.lambda_handler"
-  runtime          = "python3.8"
-}
-
+#
+# setup an iam role to access Lambda
+#
 resource "aws_iam_role" "for_lambda" {
   name = "iam_role_for_lambda"
 
@@ -53,4 +37,13 @@ resource "aws_iam_role" "for_lambda" {
   ]
 }
 EOF
+}
+
+
+resource "aws_lambda_function" "greet_lambda" {
+  filename         = "lambda_function.zip"
+  function_name    = "greet_lambda"
+  role             = "${aws_iam_role.for_lambda.arn}"
+  handler          = "greet_lambda.lambda_handler"
+  runtime          = "python3.8"
 }
