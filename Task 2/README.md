@@ -21,7 +21,11 @@ Based on the above assumptions, I came up with the following set of parameters a
 
 ### Initial vs. Reduced Design
 
-The inital budget is between \$8,000 and \$10,000 per month. The design guiding principle is to put as much data as possible in memory to reduce the number of performance bottlenecks.  Initial configuration costs \$8,317 a month and the challenge is to reduce this to less than \$6,500 per month. Looking at the budget, it is evident 81% of the monthly cost is associated with the RDS instance, applications servers and web servers, therefore my focus is to lower the cost by reducing the amount of memory and storage allocated to these three infrastructure components. The table summarizes these adjustments. For the RDS instance, I have decided to keep the same vCPU count using ARM processors and reduce the memory from 128 GB to 64 GB, database storage has been reduced from 1 to 0.5 TB, and backup size has been reduced from 500 GB and 100 GB. We could migitate potential performance hits by doing more proacitve DBA-type work (e.g. indexing, data partitioning and archiving)  These changes alone reduce the cost by \$1,185 (or 65% of the saving we need to produce), additionl reduced in S3 storage and number of web and applications servers yields the desired cost of \$6,482 per month.
+The inital budget is between \$8,000 and \$10,000 per month. The design guiding principle is to put as much data as possible in memory to reduce the number of performance bottlenecks.  Initial configuration costs \$8,317 a month and the challenge is to reduce this to less than \$6,000 per month. Looking at the budget, it is evident 81% of the monthly cost is associated with the RDS instance, applications servers and web servers, therefore my focus is to lower the cost by reducing the amount of memory and storage allocated to these three infrastructure components. The table summarizes these adjustments. For the RDS instance, I have decided to keep the same vCPU count using ARM processors and reduce the memory from 128 GB to 64 GB, database storage has been reduced from 1 to 0.5 TB, and backup size has been reduced from 500 GB and 100 GB. We could migitate potential performance hits by doing more proacitve DBA-type work (e.g. indexing, data partitioning and archiving)  These changes alone reduce the cost by \$1,185 (or 65% of the saving we need to produce)
+
+
+
+\$6,482
 
 | Service                             | Initial Config                                               | Reduced Config                                               |
 | ----------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -37,13 +41,18 @@ The inital budget is between \$8,000 and \$10,000 per month. The design guiding 
 | Data  Transfer                      | inbound only                                                 | no change                                                    |
 
 
-### Initial vs. Increased Design
-
 
 
 
 | Service                              | Initial Config                                        | Increased Config                                      |
 | ------------------------------------ | ----------------------------------------------------- | ----------------------------------------------------- |
+
+
+
+### Initial vs. Increased Design
+
+
+
 | Amazon  RDS for MySQL - VA           | On-Demand, db.r5.4xlarge, 1 TB  storage, 0.5TB Backup | On-Demand, db.r5.8xlarge, 1 TB  storage, 0.5TB Backup |
 | Amazon  EC2 App - VA                 | Savings Plans 1 Year, 5  instances m5.4xlarge         | Savings Plans 1 Year, 5  instances m5.8xlarge         |
 | Amazon  RDS for MySQL - OH (Replica) | None                                                  | On-demand db.r5.4xlarge, 1 TB  storage, 0.5 TB backup |
