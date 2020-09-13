@@ -39,7 +39,7 @@ The inital budget is between \$8,000 and \$10,000 per month. The design guiding 
 
 ### Initial vs. Increased Design
 
-
+With the budget ceiling increased to \$20,000 per month, I have decided to follow the origial guiding principle by increasing the memory in infrastructure components that can benefit from it, an obvious choice is the RDS instance which now has 246 GB of memory. I also improved the resilience by having a failover instance in the Ohio region. The RDS instance there will be initially set up as a read replica. As summarizes in the table below, the compute capacity in the Ohio failover region is slightly less than the primary site (for cost reason), therefore during the failure, users of the social media application might see a slight degradation in performance. The monthly cost of this configuration is \$19,606.
 
 
 | Service                              | Initial Config                                        | Increased Config                                      |
