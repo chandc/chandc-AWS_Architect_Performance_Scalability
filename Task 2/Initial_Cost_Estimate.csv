@@ -1,7 +1,6 @@
 Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
 My Estimate,US East (N. Virginia),,Amazon API Gateway,0,237.98,2855.76,USD,"HTTP API requests units (exact number), Average size of each request (10 KB), REST API request units (exact number), Cache memory size (GB) (0.5), WebSocket message units (thousands), Average message size (32 KB), Requests (50 per second), Requests (10 per second)"
-My Estimate,US East (N. Virginia),,Amazon Aurora MySQL-Compatible,0,3655.1,43861.2,USD,"Change records per statement (0.38), ( 1 instances of type db.r5.8xlarge  Memory optimized  OnDemand ), Storage amount (1 TB), Number of I/Os per month in millions (720), Additional backup storage (1 TB)"
-My Estimate,US East (N. Virginia),,Amazon EC2,0,1781.6,21379.2,USD,"Operating system (Linux), Quantity (5), Pricing strategy (EC2 Instance Savings Plans  ), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (30 GB), Instance type (m5.4xlarge)"
+My Estimate,US East (N. Virginia),,Amazon EC2 App,0,1781.6,21379.2,USD,"Operating system (Linux), Quantity (5), Pricing strategy (EC2 Instance Savings Plans 1 Year No UpFront), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (30 GB), Instance type (m5.4xlarge)"
 My Estimate,US East (N. Virginia),,Amazon Elastic IP,0,0,0,USD,"Number of EC2 instances (10), Number of EIPs per instance (1), Number of EIP remaps (0)"
 My Estimate,US East (N. Virginia),,Amazon Route 53,0,505,6060,USD,Hosted Zones (2)
 My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,0,0,USD," Inbound (from: Internet) 0 TB per month 
@@ -10,7 +9,11 @@ My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,0,0,USD,
 "
 My Estimate,US East (N. Virginia),,Elastic Load Balancing,0,500.05,6000.6,USD,Number of Application Load Balancers (2)
 My Estimate,US East (N. Virginia),,S3 Standard,0,1850.62,22207.44,USD,S3 Standard storage (10 TB per month)
-My Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,"Data Transfer, Data transfer cost (0)"
+My Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD," Inbound (from: Internet) 0 TB per month 
+ Outbound (to: Amazon Cloud Front) 1 TB per month 
+"
+My Estimate,US East (N. Virginia),,Amazon EC2 - Web,0,355.06,4260.72,USD,"Operating system (Linux), Quantity (8), Pricing strategy (EC2 Instance Savings Plans  ), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (100 GB), Instance type (t3a.large)"
+My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,3087.36,37048.32,USD,"Quantity (1), Pricing strategy (On-Demand Instances  ), Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Instance type (db.r5.4xlarge), Additional backup storage (0.5 TB)"
 ,,,,,,,,
 ,,,,,,,,
 ,,,,,,,,

@@ -1,6 +1,6 @@
 Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
-My Estimate,US East (N. Virginia),,Amazon API Gateway,0,237.98,2855.76,USD,"HTTP API requests units (exact number), Average size of each request (10 KB), REST API request units (exact number), Cache memory size (GB) (0.5), WebSocket message units (thousands), Average message size (32 KB), Requests (50 per second), Requests (10 per second)"
-My Estimate,US East (N. Virginia),,Amazon EC2,0,3548.2,42578.4,USD,"Operating system (Linux), Quantity (5), Pricing strategy (Standard Reserved Instances  ), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (30 GB), Instance type (m5.8xlarge)"
+My Estimate,US East (N. Virginia),,Amazon API Gateway ,0,237.98,2855.76,USD,"HTTP API requests units (exact number), Average size of each request (10 KB), REST API request units (exact number), Cache memory size (GB) (0.5), WebSocket message units (thousands), Average message size (32 KB), Requests (50 per second), Requests (10 per second)"
+My Estimate,US East (N. Virginia),,Amazon EC2 App,0,3548.2,42578.4,USD,"Operating system (Linux), Quantity (5), Pricing strategy (Standard Reserved Instances 1 Year No UpFront), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (30 GB), Instance type (m5.8xlarge)"
 My Estimate,US East (N. Virginia),,Amazon Elastic IP,0,0,0,USD,"Number of EC2 instances (10), Number of EIPs per instance (1), Number of EIP remaps (0)"
 My Estimate,US East (N. Virginia),,Amazon Route 53,0,505,6060,USD,Hosted Zones (2)
 My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,0,0,USD," Inbound (from: Internet) 0 TB per month 
@@ -9,10 +9,17 @@ My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,0,0,USD,
 "
 My Estimate,US East (N. Virginia),,Elastic Load Balancing,0,500.05,6000.6,USD,Number of Application Load Balancers (2)
 My Estimate,US East (N. Virginia),,S3 Standard,0,1850.62,22207.44,USD,S3 Standard storage (10 TB per month)
-My Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,"Data Transfer, Data transfer cost (0)"
-My Estimate,US East (Ohio),,Amazon RDS for MySQL,0,5710.58,68526.96,USD,"Quantity (1), Pricing strategy (Standard Reserved Instances 1 Year No Upfront), Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (30 GB), Instance type (db.r5.8xlarge), Additional backup storage (1 TB)"
-My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,4863.444,58361.33,USD,"Quantity (1), Pricing strategy (Standard Reserved Instances  ), Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (30 GB), Instance type (db.r5.12xlarge)"
-My Estimate,US East (Ohio),,Amazon EC2,0,1904.2,22850.4,USD,"Operating system (Linux), Quantity (5), Pricing strategy (Standard Reserved Instances 1 Year No Upfront), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (100 GB), Instance type (r6g.4xlarge)"
+My Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD," Inbound (from: Internet) 0 TB per month 
+ Outbound (to: Amazon Cloud Front) 1 TB per month 
+"
+My Estimate,US East (Ohio),,Amazon RDS for MySQL - OH (failover),0,3087.36,37048.32,USD,"Quantity (1), Pricing strategy (On-Demand Instances  ), Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Instance type (db.r5.4xlarge), Additional backup storage (0.5 TB)"
+My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,5939.2,71270.4,USD,"Quantity (1), Pricing strategy (On-Demand Instances 1 Year No UpFront), Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Additional backup storage (1 TB)"
+My Estimate,US East (Ohio),,Amazon EC2 App - OH (Failover),0,1433.28,17199.36,USD,"Operating system (Linux), Quantity (2), Pricing strategy (Standard Reserved Instances 1 Year No UpFront), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (100 GB), Instance type (m5.8xlarge)"
+My Estimate,US East (N. Virginia),,Amazon EC2 Web,0,630.71,7568.52,USD,"Operating system (Linux), Quantity (8), Pricing strategy (Standard Reserved Instances 1 Year No UpFront), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (100 GB), Instance type (t3a.xlarge)"
+My Estimate,US East (Ohio),,Amazon EC2 Web - OH (Failover),0,630.71,7568.52,USD,"Operating system (Linux), Quantity (8), Pricing strategy (Standard Reserved Instances 1 Year No UpFront), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (100 GB), Instance type (t3a.xlarge)"
+My Estimate,US East (Ohio),,Amazon Route 53 - OH (Failover),0,505,6060,USD,Hosted Zones (2)
+My Estimate,US East (Ohio),,Elastic Load Balancing - OH (Failover),0,500.05,6000.6,USD,Number of Application Load Balancers (2)
+My Estimate,US East (Ohio),,Amazon API Gateway - OH (Failover),0,237.98,2855.76,USD,"HTTP API requests units (exact number), Average size of each request (10 KB), REST API request units (exact number), Cache memory size (GB) (0.5), WebSocket message units (thousands), Average message size (32 KB), Requests (50 per second), Requests (10 per second)"
 ,,,,,,,,
 ,,,,,,,,
 ,,,,,,,,

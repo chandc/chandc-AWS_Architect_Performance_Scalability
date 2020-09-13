@@ -20,4 +20,7 @@ You have been asked to plan a SERVERLESS architecture schematic for a new applic
 ### Task 4: Set up Cost Monitoring
 
 
-### Task 5 : Use Terraform to Provision AWS Infrastructure
+### Task 5: Use Terraform to Provision AWS Infrastructure
+
+
+### Task 6: Destroy the Infrastructure using Terraform and prepare for submission
