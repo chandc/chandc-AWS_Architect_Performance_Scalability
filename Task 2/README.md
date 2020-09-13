@@ -54,7 +54,7 @@ With the budget ceiling increased to \$20,000 per month, I have decided to follo
 | Amazon  Route 53                     | hosted in 2 Zones                                     | replicate in OH                                       |
 | Elastic  Load Balancing              | 2 instances                                           | replicate in OH                                       |
 | Amazon  API Gateway                  | Average size for each request 10  KB                  | replicate in OH                                       |
-| Amazon  Elastic IP                   | 1 for NAT Gateway                                     | no change                                             |
-| Amazon  Virtual Private Cloud (VPC)  | Inbound only                                          | no change                                             |
-| Data  Transfer                       | Inbound only                                          | no change                                             |
+| Amazon  Elastic IP                   | 1 for NAT Gateway                                     |    replicate in OH                                          |
+| Amazon  Virtual Private Cloud (VPC)  | Inbound only                                          |      replicate in OH                                        |
+| Data  Transfer                       | Inbound only                                          |     replicate in OH                                         |
 
