@@ -1,4 +1,4 @@
-#### I am not able show a green OK state, as my other AWS activities have pushed the cost estimate over the $5 thershold. This triggered the alarm to send myself an email notification shown below. Effectively, this demonstrated that the alarm is working as designed.
+#### I am not able to show a green OK state, as my other AWS activities have pushed the cost estimate over the $5 thershold. This triggered the alarm to send myself an email notification shown below. Effectively, this demonstrated that the alarm is working as designed.
 
 >
 AWS Notifications <no-reply@sns.amazonaws.com>
